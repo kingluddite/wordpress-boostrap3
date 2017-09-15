@@ -1,0 +1,55 @@
+.hero {
+  background: url('/assets/img/hero-bg.jpg') 50% 0 repeat fixed;
+  min-height: 500px;
+  padding: 40px 0;
+  color: white;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  &__article {
+    width: 100%;
+    text-align: center;
+  }
+  &__text-content {
+    margin-top: 30px;
+  }
+  &__price-timeline {
+    margin: 30px 0 60px;
+    text-align: center;
+  }
+
+  &__price {
+    display: inline-block;
+    margin: 0 2% 0 0;
+    width: 30%;
+    position: relative;
+    background: $blueGray;
+    padding: 10px 20px 30px;
+    vertical-align: top;
+  }
+  &__price--active {
+    background-color: $salmon;
+  }
+  &__price-title {
+    margin: 0 0 1rem;
+  }
+  &__price-amount {
+    color: $white;
+    font-weight: bold;
+    display: block;
+  }
+  &__price--circle {
+    background: $black;
+    display: block;
+    height: 70px;
+    width: 70px;
+    text-align: center;
+    line-height: 70px;
+    font-weight: bold;
+    font-size: 2.4rem;
+    border-radius: 100%;
+    position: absolute;
+    bottom: -35px;
+    left: 50%;
+    margin-left: -35px;
+  }
+}

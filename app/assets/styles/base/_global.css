@@ -1,0 +1,49 @@
+/* ==== GENERAL ==== */
+html {
+  font-size: 10px;
+}
+body {
+  margin-top: 50px;
+  font-family: 'europoa', 'Raleway', Helvetica, sans-serif;
+  font-size: 1.6rem;
+  background: url('/assets/img/tile.jpg') top left repeat;
+}
+
+/* ==== Headings ==== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 4.8rem;
+}
+
+h1,
+h2 {
+  margin: 0 0 40px;
+}
+
+h3 {
+  margin: 20px 0;
+}
+
+h4 {
+  font-size: 1.8rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+button,
+input {
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}

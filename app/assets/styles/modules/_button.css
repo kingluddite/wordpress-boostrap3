@@ -1,0 +1,17 @@
+/* override bootstrap css */
+
+a.btn {
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.btn {
+  font-weight: bold;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.btn-danger {
+  background-color: $red;
+  border-color: $darkRed;
+}

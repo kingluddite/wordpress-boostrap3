@@ -1,0 +1,12 @@
+.optin {
+  background: $blueGray;
+  padding: 20px 0;
+  color: $white;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-size: 1.2rem;
+
+  &__content {
+    margin: 7px 0 0 0;
+  }
+}
