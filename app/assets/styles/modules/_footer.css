@@ -1,0 +1,28 @@
+.footer {
+  background-color: $blueGray;
+  color: $white;
+  padding: 2rem 0 1rem;
+  font-size: 1.2rem;
+
+  &__link {
+    &:link,
+    &:visited {
+      color: $white;
+    }
+
+    &:hover {
+      color: $red;
+    }
+  }
+
+  &__footer-logo-container {
+    margin: 0;
+  }
+
+  &__signup-link {
+    color: $red;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

@@ -493,6 +493,14 @@ h4 {
   font-size: 1.8rem;
 }
 
+a {
+  color: #dd5638;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
 img {
   max-width: 100%;
 }
@@ -501,6 +509,16 @@ button,
 input {
   font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+}
+
+p {
+  margin: 0 0 1.5rem;
+}
+
+/* all lead text is not bold */
+
+p.lead {
+  font-weight: normal;
 }
 
 .section {
@@ -521,7 +539,7 @@ input {
 
 /* override bootstrap css */
 
-a.btn {
+.btn {
   font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
@@ -535,6 +553,21 @@ a.btn {
 .btn-danger {
   background-color: #dd5638;
   border-color: #d95131;
+}
+
+.btn-success {
+  background-color: #79b844;
+  border: none;
+}
+
+.btn-success:hover {
+  background: #6a9b3d;
+}
+
+/* get rid of bootstrap default focus blue border */
+
+.btn:focus {
+  outline: none !important;
 }
 
 .hero {
@@ -551,12 +584,23 @@ a.btn {
     text-align: center;
   }
 
+.hero__logo {
+    width: 50%;
+  }
+
+@media (min-width: 768px) {
+
+.hero__logo {
+      width: 100%
+  }
+  }
+
 .hero__text-content {
-    margin-top: 30px;
+    margin-top: 3rem;
   }
 
 .hero__price-timeline {
-    margin: 30px 0 60px;
+    margin: 3rem 0 6rem;
     text-align: center;
   }
 
@@ -566,7 +610,7 @@ a.btn {
     width: 30%;
     position: relative;
     background: #3e4249;
-    padding: 10px 20px 30px;
+    padding: 1rem 2rem 3rem;
     vertical-align: top;
   }
 
@@ -597,7 +641,11 @@ a.btn {
     position: absolute;
     bottom: -35px;
     left: 50%;
-    margin-left: -35px;
+    margin-left: -3.5rem;
+  }
+
+.hero__enroll {
+    color: #ffffff;
   }
 
 .optin {
@@ -610,9 +658,230 @@ a.btn {
 }
 
 .optin__content {
-    margin: 7px 0 0 0;
+    margin: 7px 0 1rem 0;
   }
 
 .who-benefits {
   background: #ffffff;
+}
+
+.course-features {
+  background-color: #3e4249;
+  color: #ffffff;
+  text-align: center;
+}
+
+.project-features {
+  text-align: center;
+}
+
+.video-featurette {
+  background: url('/assets/img/stuff-bg.jpg') 50% 100% repeat fixed;
+  background-size: cover;
+  text-align: center;
+  color: #ffffff;
+  height: 500px;
+  width: 100%;
+  padding: 0;
+}
+
+@media (min-width: 768px) {
+
+.video-featurette {
+    height: 100%
+}
+  }
+
+.custom-sprites {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background: url('/assets/img/icon-sprite.png') no-repeat;
+}
+
+.custom-sprites__computer {
+    background-position: 0 0;
+  }
+
+.custom-sprites__watch {
+    background-position: -40px 0;
+  }
+
+.custom-sprites__calendar {
+    background-position: -80px 0;
+  }
+
+.custom-sprites__community {
+    background-position: -120px 0;
+  }
+
+.custom-sprites__instructor {
+    background-position: -160px 0;
+  }
+
+.custom-sprites__device {
+    background-position: -200px 0;
+  }
+
+.instructor {
+  background: white url('/assets/img/brad-elvis.png') 90% -10px no-repeat;
+}
+
+.instructor__title {
+    margin: 0 0 20px;
+  }
+
+.num {
+  display: table;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ffffff;
+  line-height: 30px;
+  height: 140px;
+  width: 140px;
+  text-align: center;
+  background: #dd5638;
+  border-radius: 100%;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.num__content {
+    /* parent `num` must be display: table` */
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+.num__category {
+    display: block;
+    font-size: 2rem;
+    font-weight: normal;
+  }
+
+.custom-modal__content {
+    /* give modal textured bg */
+    background: url('/assets/img/tile.jpg') top left repeat;
+  }
+
+.badge-social {
+  background: #cccccc;
+  font-size: 2.4rem;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 42px;
+  margin: 0 0.5rem 2rem 0;
+  padding: 0;
+  border-radius: 50px;
+  color: #ffffff;
+}
+
+.badge-social__twitter:hover {
+    background: #55acee;
+  }
+
+.badge-social__facebook:hover {
+    background: #3b5998;
+  }
+
+.badge-social__github:hover {
+    background: #101010;
+  }
+
+.testimonials {
+  text-align: center;
+}
+
+.testimonials .row + .row {
+    margin-top: 2rem;
+  }
+
+.testimonial {
+  margin-bottom: 60px;
+}
+
+.testimonial img {
+    border-radius: 50%;
+  }
+
+/* removes invisible space before blockquote
+  people use this to add quotes */
+
+.testimonial blockquote:before {
+    display: none;
+  }
+
+.testimonial blockquote {
+    padding: 0;
+    border: none;
+    font-style: italic;
+    text-align: left;
+  }
+
+.testimonial cite {
+    display: block;
+    color: #777;
+    margin: 15px 0 0 0;
+  }
+
+.signup {
+  text-align: center;
+  background: url('/assets/img/hipster-stuff.jpg') center center repeat fixed;
+  background-size: cover;
+  padding: 14rem 0;
+}
+
+.signup a {
+    color: #ffffff;
+  }
+
+.signup__title {
+    font-weight: normal;
+  }
+
+.footer {
+  background-color: #3e4249;
+  color: #ffffff;
+  padding: 2rem 0 1rem;
+  font-size: 1.2rem;
+}
+
+.footer__link:link,
+    .footer__link:visited {
+      color: #ffffff;
+    }
+
+.footer__link:hover {
+      color: #dd5638;
+    }
+
+.footer__footer-logo-container {
+    margin: 0;
+  }
+
+.footer__signup-link {
+    color: #dd5638;
+  }
+
+.footer__signup-link:hover {
+      text-decoration: underline;
+    }
+
+@media screen and (max-width: 991px) {
+  .instructor .container {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 2rem;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .instructor .num {
+    height: 100px;
+    width: 100px;
+    font-size: 2.2rem;
+  }
+
+  .instructor .num span {
+    font-size: 1.6rem;
+  }
 }

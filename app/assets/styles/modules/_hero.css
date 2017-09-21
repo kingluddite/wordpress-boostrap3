@@ -9,11 +9,18 @@
     width: 100%;
     text-align: center;
   }
+
+  &__logo {
+    width: 50%;
+    @mixin atMedium {
+      width: 100%;
+    }
+  }
   &__text-content {
-    margin-top: 30px;
+    margin-top: 3rem;
   }
   &__price-timeline {
-    margin: 30px 0 60px;
+    margin: 3rem 0 6rem;
     text-align: center;
   }
 
@@ -23,7 +30,7 @@
     width: 30%;
     position: relative;
     background: $blueGray;
-    padding: 10px 20px 30px;
+    padding: 1rem 2rem 3rem;
     vertical-align: top;
   }
   &__price--active {
@@ -50,6 +57,9 @@
     position: absolute;
     bottom: -35px;
     left: 50%;
-    margin-left: -35px;
+    margin-left: -3.5rem;
+  }
+  &__enroll {
+    color: $white;
   }
 }

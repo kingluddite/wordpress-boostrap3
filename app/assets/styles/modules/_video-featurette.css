@@ -1,0 +1,13 @@
+.video-featurette {
+  background: url('/assets/img/stuff-bg.jpg') 50% 100% repeat fixed;
+  background-size: cover;
+  text-align: center;
+  color: $white;
+  height: 500px;
+  width: 100%;
+  padding: 0;
+
+  @mixin atMedium {
+    height: 100%;
+  }
+}

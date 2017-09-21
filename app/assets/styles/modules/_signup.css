@@ -1,0 +1,14 @@
+.signup {
+  text-align: center;
+  background: url('/assets/img/hipster-stuff.jpg') center center repeat fixed;
+  background-size: cover;
+  padding: 14rem 0;
+
+  a {
+    color: $white;
+  }
+
+  &__title {
+    font-weight: normal;
+  }
+}

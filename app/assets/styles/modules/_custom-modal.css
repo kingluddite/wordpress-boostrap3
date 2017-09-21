@@ -1,0 +1,6 @@
+.custom-modal {
+  &__content {
+    /* give modal textured bg */
+    background: url('/assets/img/tile.jpg') top left repeat;
+  }
+}

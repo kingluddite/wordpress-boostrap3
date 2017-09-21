@@ -38,6 +38,14 @@ h4 {
   font-size: 1.8rem;
 }
 
+a {
+  color: $red;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
 img {
   max-width: 100%;
 }
@@ -46,4 +54,13 @@ button,
 input {
   font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+}
+
+p {
+  margin: 0 0 1.5rem;
+}
+
+/* all lead text is not bold */
+p.lead {
+  font-weight: normal;
 }

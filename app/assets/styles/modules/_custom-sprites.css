@@ -1,0 +1,25 @@
+.custom-sprites {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background: url('/assets/img/icon-sprite.png') no-repeat;
+
+  &__computer {
+    background-position: 0 0;
+  }
+  &__watch {
+    background-position: -40px 0;
+  }
+  &__calendar {
+    background-position: -80px 0;
+  }
+  &__community {
+    background-position: -120px 0;
+  }
+  &__instructor {
+    background-position: -160px 0;
+  }
+  &__device {
+    background-position: -200px 0;
+  }
+}

@@ -1,0 +1,7 @@
+.instructor {
+  background: white url('/assets/img/brad-elvis.png') 90% -10px no-repeat;
+
+  &__title {
+    margin: 0 0 20px;
+  }
+}

@@ -1,0 +1,21 @@
+.badge-social {
+  background: $lightGray;
+  font-size: 2.4rem;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 42px;
+  margin: 0 0.5rem 2rem 0;
+  padding: 0;
+  border-radius: 50px;
+  color: $white;
+  &__twitter:hover {
+    background: $twitterBlue;
+  }
+  &__facebook:hover {
+    background: $facebookBlue;
+  }
+  &__github:hover {
+    background: $black;
+  }
+}
