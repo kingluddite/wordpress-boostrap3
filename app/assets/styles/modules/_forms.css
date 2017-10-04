@@ -1,0 +1,25 @@
+.forms {
+  label {
+    display: block;
+    font-weight: bold;
+  }
+
+  input[type='text'],
+  input[type='email'],
+  input[type='url'],
+  input[type='password'],
+  input[type='search'] {
+    color: #666666;
+    border: 1px solid $lightGray;
+    border-radius: 3px;
+    display: block;
+    /*
+    In CSS, by default, the width and height you assign to an element is applied only to the element's content box. If the element has any border or padding, this is then added to the width and height to arrive at the size of the box that's rendered on the screen. This means that when you set width and height you have to adjust the value you give to allow for any border or padding that may be added. This is especially tricky when implementing a responsive design.
+
+    border-box tells the browser to account for any border and padding in the value you specify for width and height. If you set an element's width to 100 pixels, that 100 pixels will include any border or padding you added, and the content box will shrink to absorb that extra width. This typically makes it much easier to size elements.
+    */
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0.6rem 1.2rem;
+  }
+}

@@ -1,0 +1,21 @@
+.feature-image {
+  display: table;
+  width: 100%;
+
+  &__default {
+    background: url('/assets/img/stuff-feature.jpg') no-repeat;
+    background-size: cover;
+  }
+
+  &__default-alt {
+    background: url('/assets/img/hipster-stuff.jpg') no-repeat;
+    background-size: cover;
+  }
+
+  &__title {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    color: white;
+  }
+}

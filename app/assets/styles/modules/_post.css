@@ -1,0 +1,80 @@
+/* ==== BLOG ==== */
+.post {
+  position: relative;
+
+  background: $white;
+  border: 1px solid $borderGray;
+  border-radius: 4px;
+  margin: 0 0 4rem;
+
+  &__heading,
+  &__excerpt,
+  &__body {
+    padding: 2rem;
+  }
+
+  &__title {
+    border-bottom: 1px solid $borderGray;
+    font-size: 2.4rem;
+    margin: 0 0 1.5rem;
+    padding: 0 0 1.5rem;
+  }
+
+  &__subtitle {
+    border-bottom: 1px solid $borderGray;
+    margin: 0 0 1.5rem;
+    padding: 2rem;
+  }
+
+  &__image {
+    height: auto;
+  }
+
+  &__details {
+    font-size: 1.2rem;
+    width: 90%;
+    i.fa {
+      padding-left: 1rem;
+    }
+    i.fa:first-child {
+      padding: 0;
+    }
+  }
+
+  /* ==== COMMENTS ==== */
+  &__comments--badge {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+
+    border: none;
+    border-radius: 100%;
+    height: 7rem;
+    width: 7rem;
+    background: $altGreen;
+    text-align: center;
+    display: table;
+    &:hover {
+      background-color: $lightGreen;
+    }
+  }
+
+  &__comments--link {
+    display: table-cell;
+    vertical-align: middle;
+    color: $white;
+    font-size: 2rem;
+    line-height: 20px;
+
+    &:hover {
+      color: $white !important;
+    }
+
+    i.fa {
+      display: block;
+      font-size: 1.5rem;
+      padding: 0;
+      margin-bottom: 0.4rem;
+    }
+  }
+}

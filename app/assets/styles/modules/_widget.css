@@ -1,0 +1,28 @@
+.widget {
+  position: relative;
+
+  background: $white;
+  border: 1px solid $borderGray;
+  border-radius: 4px;
+  margin: 0 0 4rem;
+  padding: 2rem;
+
+  &__title {
+    margin: 0 0 1rem;
+    padding: 0 0 1rem;
+    border-bottom: 1px solid $borderGray;
+  }
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+      margin: 0 0 0.5rem;
+      &:hover {
+        position: relative;
+        left: 1px;
+      }
+    }
+  }
+}
